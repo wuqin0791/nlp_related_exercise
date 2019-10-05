@@ -14,7 +14,6 @@ def get_generation_by_gram(grammar_rule, target, stmt_split = '=', or_split='|')
     rules = dict() # key is the @statement, value is @expression 
 
 
-
     for line in hello_rules.strip().split('\n'):
         if not line in line: continue
         #skip the empty line

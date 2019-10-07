@@ -1,3 +1,5 @@
+#这是课堂代码复现
+
 import jieba
 import random
 from collections import Counter
@@ -67,5 +69,7 @@ def two_gram_model(sentence):
 a = two_gram_model('此外自本周6月12日起除小米手机6等15款机型')
 
 print(a)
+
+
 
 

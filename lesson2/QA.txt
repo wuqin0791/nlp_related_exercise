@@ -1,0 +1,24 @@
+2.1. What conditions are required to make the BFS return the optimal solution ?
+A: Make sure the weight of each side is equal. Apart from this, the depth of model is not big and has no much roots.
+
+2.2 Is there a way to make DFS find the optimal solution ? (You may need to read some material about iterative DFS)
+I think there is no way to make DFS find the optimal solution, because it will search the former line util it reaches the end and then search the next line.
+
+2.3 In what conditions BFS is a better choice than DFS and vice versa ?
+If you want to find the shortest way in the process, BFS is a better choice.
+If you don't contain the record, then DFS is much better. Because DFS has lower Space Complexity.
+
+
+2.4 When can we use machine learning ?
+There are two kinds of problem that we can use ML. One is regressation, the other is classification. So if you want to predict something, you can use ML. If you want to classify some clusters, you can also use ML to deal with it.
+
+2.5 What is the gradient of a function ?
+Gradient is the partial derivative of the point in the function.
+
+2.6 How can we find the maximum value of a function using the information of gradient ?
+Assume it is a concave function.
+Fisrt, select a point randomly, calculate the partial derivative for k and b. Define a parameter learning rate as a step.
+Then, use interation, calculate the x - lr * partial derivative for k as k_gradient, and x - lr * partial derivative for b as b_gradient,
+Next, we draw a conclusion about this model.
+we'll calculate f(x) = x1 - lr*(partial derivative for x), then f(x2) - f(x1) < extremely small value.
+Last, we find the maximum value of function, when x = x2, function value = f(x2). 

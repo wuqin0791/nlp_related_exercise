@@ -1,3 +1,8 @@
+'''
+@Description: This is a python file
+@Author: JeanneWu
+@Date: 2019-10-05 17:09:10
+'''
 #这是课堂代码复现
 
 import jieba

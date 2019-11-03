@@ -1,0 +1,34 @@
+1. What's the model? why all the models are wrong, but some are useful? (5 points)
+Model is just driven by some kinds of data, not the whole data to represent it. And the model is just an abstract of the real life.
+However, some models are usefull, because it can predict value in life closely, although it is not accurate.
+
+2. What's the underfitting and overfitting? List the reasons that could make model overfitting or underfitting. (10 points)
+underfitting: when accurate rate of the model is obviously under the real accurate rate, we call it underfitting. which happens that the model is to simple, has fewer parameters to represent.
+overfitting: In the training data, accurate rate of the model is obviously very high, but in the testing data it shows different low accurate rate.
+There are serveral reasons to result it:
+1. model is too complex
+2. the range of data set is too small
+3. the distribution of data is not very well
+4. the value of the parameter is too big
+
+3. What's the precision, recall, AUC, F1, F2score. What are they mainly target on? (12')
+precision = tp /(tp + fp)  => 计算满足要求正确值占总值的比率
+recall = tp / (tp + fn) => 计算满足要求正确值占满足要求正确值+不满足目标的错误值
+tp =  true positive 
+fp = false positive
+fn = false nagative
+
+F1_score = 2*(precision * recall) / (precision + recall) => 同时考虑到两个点
+
+AUC： area under curve，用来计算精准度，因为精确度越高，auc的曲线斜率越大。
+
+
+4. Based on our course and yourself mind, what's the machine learning? (8')
+In tradition way, we can define a function precisely, but machine learning is totally different.
+
+Machine learning is a model driven by data. The form of parameters are calculated by data for many times of iteration.
+design the function with calculated parameters.
+
+
+5. "正确定义了机器学习模型的评价标准(evaluation)， 问题基本上就已经解决一半". 这句话是否正确？你是怎么看待的？ (8‘)
+因为机器学习就是通过不停的迭代计算，算出模型的参数，从而不断的完善。迭代是有目标的，不是任意的参数都可以的。所以一旦有了目标，机器学习就有了方向，也就知道如何评价模型是优还是良。

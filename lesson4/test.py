@@ -1,5 +1,5 @@
 '''
-@Description: 测试for循环和matrix的计算速度
+@Description: 测试for循环和matrix的计算时间，并进行比较
 @Author: JeanneWu
 @Date: 2019-11-16 21:38:08
 '''

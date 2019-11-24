@@ -1,0 +1,25 @@
+1. Compared to FNN, what is the biggest advantage of CNN?
+In traditional way like FNN, perhaps we will use as many parameters as possible to deal neural network, so that it will lead to the overfitting problem.
+But in CNN, with the charateristics of parameter sharing, CNN will not use so many parameters in neural network. So that it'll reduce the possibility of overfitting problem.
+ 
+2. Suppose your input is a 100 by 100 gray image, and you use a convolutional layer with 50 filters that are each 5x5. How many parameters does this hidden layer have (including the bias parameters)?
+50*5*5*2
+W：50*5*5
+b：50*5*5
+
+3. What are "local invariant" and "parameter sharing" ?
+local invariant： CNN can identify certain feature with the same filter, no matter where the certain feature is.
+parameter sharing: all pixal shares the same parameters which belongs to filter.
+
+4. Why we use batch normalization ?
+by formatting the output of each layer or the first input, it enables the data as similar Normal distribution，so that data has gradient and the neural network can continue.
+
+5. What problem does dropout try to solve ?
+Overfitting problem
+
+6. Is the following statement correct and why ? 
+"Because pooling layers do not have parameters, they do not affect the backpropagation(derivatives) calculation"
+No, pooling layers don't have parameters, so can not do derivatives.
+But pooling layers have two kinds, one is mean pooling, the other is max pooling, so different ways of pooling has different ways of backpropagation calculation.
+For example, backpropagation of mean pooling is to seperate the block into some small blocks on average.
+But max pooling is totally different.
